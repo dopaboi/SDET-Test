@@ -1,7 +1,6 @@
 package app.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import helpers.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

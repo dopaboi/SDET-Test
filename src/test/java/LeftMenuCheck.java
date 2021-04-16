@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class ExampleTest extends A_BaseTest {
+public class LeftMenuCheck extends A_BaseTest {
     @Test
     public void LeftMenuCheck() {
         app.demosPage.open();
