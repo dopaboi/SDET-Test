@@ -71,6 +71,7 @@ public class Driver {
         }
     }
 
+
     public static void waitForUrlContains(String urlChunk) {
         WebDriverWait wait = new WebDriverWait(currentDriver(), 10);
         wait.until(ExpectedConditions.urlContains(urlChunk));
