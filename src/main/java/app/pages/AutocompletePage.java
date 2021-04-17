@@ -1,5 +1,6 @@
 package app.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -17,12 +18,12 @@ public class AutocompletePage extends BasePage {
 
 
     public void goToAutocompletePage() {
-        $(autocompleteClick).click();
+        $(autocompleteClick).should(Condition.exist).click();
     }
 
     public void inputTag(String charaсter) {
         Selenide.switchTo().frame(iframe);
-        $(inputField).click();
+        $(inputField).should(Condition.exist).click();
         $(inputField).setValue(charaсter);
         $(inputField).sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ENTER);
         String characterFromInput = $(inputField).getValue();

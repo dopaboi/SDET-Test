@@ -9,7 +9,7 @@
     <test name="Tests">
         <classes>
             <class name="LeftMenuCheck" />
-            <class name="SliderTest"/>
+            <class name="SpinnerTest"/>
             <class name="AutocompleteTest"></class>
         </classes>
     </test>
